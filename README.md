@@ -3,7 +3,8 @@
 
 &#xa0;
 
-  <!-- <a href="https://sveltekitecommerce.netlify.app">Demo</a> -->
+<a href="https://sveltekitecommerce.vercel.app/">Demo</a>
+
 </div>
 
 <h1 align="center">Sveltekit Ecommerce</h1>

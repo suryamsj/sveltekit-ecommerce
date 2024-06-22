@@ -16,9 +16,9 @@
 <Main {products} />
 
 {#if message}
-<div class="toast toast-center z-40">
-  <div class="alert alert-success">
-    <span>{message}</span>
-  </div>
-</div>
+	<div class="toast toast-center z-40">
+		<div class="alert alert-success">
+			<span>{message}</span>
+		</div>
+	</div>
 {/if}

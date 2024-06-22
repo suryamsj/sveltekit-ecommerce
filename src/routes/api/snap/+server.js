@@ -12,19 +12,21 @@ export async function POST({ request }) {
 		clientKey: CLIENT_KEY
 	});
 
-	const itemDetails = cartItems.map((/** @type {{ id: any; title: any; price: any; quantity: any; }} */ item) => ({
-	  id: item.id,
-	  name: item.title,
-	  price: item.price,
-	  quantity: item.quantity,
-	}));
+	const itemDetails = cartItems.map(
+		(/** @type {{ id: any; title: any; price: any; quantity: any; }} */ item) => ({
+			id: item.id,
+			name: item.title,
+			price: item.price,
+			quantity: item.quantity
+		})
+	);
 
 	const parameter = {
 		transaction_details: {
 			order_id: crypto.randomUUID(),
 			gross_amount: totalPrice
 		},
-		item_details:itemDetails,
+		item_details: itemDetails,
 		customer_details: {
 			first_name: 'Customer',
 			last_name: 'Testing',

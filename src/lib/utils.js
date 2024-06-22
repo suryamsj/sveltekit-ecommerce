@@ -17,7 +17,7 @@ export function addToLocalStorage(product) {
 		cartItem.set(items);
 
 		toastMessage.set('Item added to cart successfully.');
-    setTimeout(() => toastMessage.set(''), 3000);
+		setTimeout(() => toastMessage.set(''), 3000);
 	}
 }
 
@@ -30,7 +30,7 @@ export function removeItemFromCart(product) {
 		cartItem.set(items);
 	}
 	toastMessage.set('Item removed from cart successfully.');
-  setTimeout(() => toastMessage.set(''), 3000);
+	setTimeout(() => toastMessage.set(''), 3000);
 }
 
 /**

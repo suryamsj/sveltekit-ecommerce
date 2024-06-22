@@ -85,8 +85,9 @@
 						{#if loading}
 							<button class="btn btn-primary w-full" disabled>Purchase</button>
 						{:else}
-							<button class="btn btn-primary w-full" on:click={() => createSnapMidtrans(price, items)}
-								>Purchase</button
+							<button
+								class="btn btn-primary w-full"
+								on:click={() => createSnapMidtrans(price, items)}>Purchase</button
 							>
 						{/if}
 					</div>
