@@ -23,7 +23,7 @@
 				? ''
 				: 'hidden'}"
 		>
-			<div class="relative h-full w-96 pb-5">
+			<div class="relative h-full w-full pb-5 md:w-96">
 				<h1 class="mb-3 text-3xl font-semibold">Your Cart :</h1>
 				<button
 					class="absolute right-5 top-2 h-auto w-6 text-lg font-bold"
